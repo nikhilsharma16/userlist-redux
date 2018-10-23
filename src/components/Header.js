@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-// import "..Style/Header.css";
-import img from "../Images/img1.jpg";
-import "./Header.css";
+import img from "../Images/img2.jpg";
+import "../Style/Header.css";
 
 export default class Header extends Component {
   state = {

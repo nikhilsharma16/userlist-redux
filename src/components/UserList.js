@@ -30,19 +30,19 @@ export default class UserList extends Component {
       <div style={{ margin: 150 }}>
         <table className="table table-bordered">
           <thead>
-            <tr>
-              <th>Name</th>
-              <th>City</th>
-              <th>Email</th>
+            <tr style={{ textAlign: "center",borderRadius:2, border:"solid" }}>
+              <th style={{ textAlign: "center",borderRadius:2, border:"solid" }}>Name</th>
+              <th style={{ textAlign: "center",borderRadius:2, border:"solid" }}>City</th>
+              <th style={{ textAlign: "center",borderRadius:2, border:"solid" }}>Email</th>
             </tr>
           </thead>
           <tbody>
             {this.state.person.map((v, i) => {
               return (
-                <tr key={i}>
-                  <td style={{ textAlign: "center" }}>{v.name.first}</td>
-                  <td>{v.location.city}</td>
-                  <td>{v.email}</td>
+                <tr key={i} style={{borderRadius:2, border:"solid"} }>
+                  <td style={{ textAlign: "center",borderRadius:2, border:"solid" }}>{v.name.first}</td>
+                  <td style={{ textAlign: "center",borderRadius:2, border:"solid" }}>{v.location.city}</td>
+                  <td style={{ textAlign: "center",borderRadius:2, border:"solid" }}>{v.email}</td>
                 </tr>
               );
             })}
